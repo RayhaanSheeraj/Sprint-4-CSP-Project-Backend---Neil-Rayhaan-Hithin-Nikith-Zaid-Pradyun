@@ -1,4 +1,5 @@
 # imports from flask
+# Brawl stars is amazing
 import json
 import os
 from urllib.parse import urljoin, urlparse
