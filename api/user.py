@@ -68,7 +68,7 @@ class UserAPI:
                 json_ready.append(user_data)
 
             return jsonify(json_ready)
-
+    
     class _CRUD(Resource):
         """
         Users API operation for Create, Read, Update, Delete.
@@ -235,7 +235,29 @@ class UserAPI:
                     "error": str(e)
                 }, 500
 
+    class _Color:
+        @token_required()
+        def get(self):
+            """
+            Return the current user's favorite color.
+            """
+            current_user = g.current_user
+            return jsonify({'color': current_user.color})
+
+        def post(self):
+            """
+            Set the current user's favorite color.
+            """
+            current_user = g.current_user
+            body = request.get_json()
+            color = body.get('color')
+            current_user.color = color
+            current_user.save()
+            return jsonify(current_user.read())
+
 # Register the API resources with the Blueprint
 api.add_resource(UserAPI._BULK_CRUD, '/users')
 api.add_resource(UserAPI._CRUD, '/user')
 api.add_resource(UserAPI._Security, '/authenticate')
+api.add_resource(UserAPI._Color, '/color')
+
