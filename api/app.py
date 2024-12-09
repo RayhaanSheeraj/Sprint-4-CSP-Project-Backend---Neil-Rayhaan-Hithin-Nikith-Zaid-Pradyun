@@ -1,3 +1,8 @@
+from flask import Flask, jsonify
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app, supports_credentials=True, origins='*')
+
 @app.route('/api/rayhaan')
 def get_rayhaan():
     InfoDb = []
