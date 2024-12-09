@@ -25,6 +25,7 @@ def get_neil():
 
 @app.route('/api/hithin')
 def get_Hithin():
+    InfoDb = []
     InfoDb.append({
         "FirstName": "Hithin",
         "LastName": "Pulamarasetty",
