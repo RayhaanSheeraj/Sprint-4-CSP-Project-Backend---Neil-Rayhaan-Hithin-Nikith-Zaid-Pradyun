@@ -18,8 +18,8 @@ def get_neil():
         "LastName": "Chandra",
         "DOB": "March 9",
         "Residence": "Kyrgyzstan",
-        "Email": "reilchandra9@gmail.com"
-        "Sports": ["Soccer", "Badminton"]
+        "Email": "reilchandra9@gmail.com",
+        "Sports": ["Soccer", "Badminton"],
         "Cars": ["Honda", "Prius"]
     })
 
@@ -45,7 +45,7 @@ def get_pradyun():
         "DOB": "February 28",
         "Residence": "4S Ranch",
         "Email": "pradyungowda@gmail.com",
-        "Extracurriculars": ["Math Club", "Physics Club", "Bio Club", "Competitive Badminton"]
+        "Extracurriculars": ["Math Club", "Physics Club", "Bio Club", "Competitive Badminton"],
         "FamilyOwnedCars": ["Tesla Model S", "Nissan Rogue"]
     })
 
@@ -70,5 +70,5 @@ def get_kush():
         "DOB": "February 6",
         "Residence": "North Pole",
         "Email": "khariakush06@gmail.com",
-        "FavoriteSoccerPlayers": ["Virgil Van Dijk", "Lamine Yamal", "Mo Salah"],
+        "FavoriteSoccerPlayers": ["Virgil Van Dijk", "Lamine Yamal", "Mo Salah"]
     })
