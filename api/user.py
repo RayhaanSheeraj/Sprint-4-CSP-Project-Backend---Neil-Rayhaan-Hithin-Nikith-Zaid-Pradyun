@@ -235,14 +235,14 @@ class UserAPI:
                     "error": str(e)
                 }, 500
 
-    class _Color:
-        @token_required()
-        def get(self):
-            """
-            Return the current user's favorite color.
-            """
-            current_user = g.current_user
-            return jsonify({'color': current_user.color})
+    # class _Color:
+    #     @token_required()
+    #     def get(self):
+    #         """
+    #         Return the current user's favorite color.
+    #         """
+    #         current_user = g.current_user
+    #         return jsonify({'color': current_user.color})
 
         def post(self):
             """
@@ -259,5 +259,9 @@ class UserAPI:
 api.add_resource(UserAPI._BULK_CRUD, '/users')
 api.add_resource(UserAPI._CRUD, '/user')
 api.add_resource(UserAPI._Security, '/authenticate')
+<<<<<<< HEAD
 
+=======
+# api.add_resource(UserAPI._Color, '/color')
+>>>>>>> 5a332f8f9c5ec40963559a3c4d89a02f37affcff
 
