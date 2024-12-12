@@ -259,9 +259,5 @@ class UserAPI:
 api.add_resource(UserAPI._BULK_CRUD, '/users')
 api.add_resource(UserAPI._CRUD, '/user')
 api.add_resource(UserAPI._Security, '/authenticate')
-<<<<<<< HEAD
 
-=======
-# api.add_resource(UserAPI._Color, '/color')
->>>>>>> 5a332f8f9c5ec40963559a3c4d89a02f37affcff
 
